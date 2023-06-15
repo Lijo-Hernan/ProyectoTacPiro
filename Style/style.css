@@ -32,7 +32,7 @@ main {
 }
 
 /* ==========HEADER MOVIL================= */
-@media (max-width:1200px) {
+@media (max-width:1024px) {
 
     /* inicio del navbar */
     .navbar__list {
@@ -93,7 +93,7 @@ main {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 
     /* inicio del navbar */
     .navbar {
@@ -170,7 +170,7 @@ main {
 }
 
 /* =============== ARTICULOS INDEX ========== */
-@media (max-width:1200px) {
+@media (max-width:1024px) {
     .articulos {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
@@ -210,7 +210,7 @@ main {
     width: 18rem;
 }
 
-@media (min-width:1200px) {
+@media (min-width:1024px) {
     .articulos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -234,15 +234,27 @@ main {
 /* =============== INICIO FOOTER ============ */
 .footer {
     background-color: #fcd10c;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+.footer__social {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+    align-items:flex-end;
+    margin: 0.5rem;
+}
+.footer__datos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 0.5rem;
+    
 }
 
 .footer__ba {
     height: 1.5rem;
+    width: 2.5rem;
 }
 
 .footer__IG {
@@ -255,11 +267,22 @@ main {
     border-radius: 50%;
 }
 
-@media (min-width:720px) {
+@media (min-width:1024px) {
     .footer {
-        flex-direction: row;
-        max-width: 1800px;
+        background-color: #fcd10c;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 2fr 1fr;
+        
     }
+    
+    .footer__social, .footer__datos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
 }
 
 /* ============= FINAL FOOTER ============= */
@@ -267,10 +290,7 @@ main {
 /* ============ INICIO ESTUDIOS ================= */
 
 .estudioslistados {
-    display: flex;
-    text-align: justify;
-    justify-content: center;
-    padding: 1rem;
+    display: none;
 }
 
 .seleccion {
@@ -282,6 +302,7 @@ main {
     text-align: justify;
     justify-content: center;
     padding: 0.5rem;
+    font-size: larger;
 }
 
 .lista-estudios {
@@ -307,7 +328,7 @@ main {
     display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .lista-estudios {
         font-family: "montsserat", arial;
         padding: 1rem;
@@ -344,6 +365,13 @@ main {
         justify-content: center;
         padding: 0.5rem;
     }
+    .estudioslistados {
+        display: flex;
+        text-align: justify;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
 
     /* ================ VENTANAS ESTUDIOS ================= */
     .check-estudios:checked~.ventana1 {
@@ -357,6 +385,7 @@ main {
     .ventana1 {
         width: 50%;
         height: auto;
+        max-width: 65rem;
         flex-direction: column;
         align-items: center;
         position: absolute;
@@ -387,20 +416,20 @@ main {
 /* ========== POSICIONAMIENTO DE VENTANAS =========== */
 .vent_cerebro {
     top: 2vh;
-    left: 50vh;
+    left: 22%;
 }
 .vent_cuello {
     top: 2vh;
-    right: 100vh;
+    right: 48%;
 
 }
 .vent_torax {
-    top: 35vh;
-    left: 50vh;
+    top: 2vh;
+    left: 22%;
 }
 .vent_abdomen {
-    top: 35vh;
-    right: 100vh;
+    top: 2vh;
+    right: 48%;
 }
 
 /* =================IMAGEN DEL VENTANA =============== */
@@ -408,7 +437,7 @@ main {
         height: 15rem;
         width: 15rem;
     }
-}
+
 
 /* ======== PREPARACION =========== */
 .intro-seguridad {
@@ -547,6 +576,7 @@ main {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4 1fr);
         justify-content: center;
+        gap: 1rem;
     }
 }
 
