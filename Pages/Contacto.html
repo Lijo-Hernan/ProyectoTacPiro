@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/style.css">
+    <meta name="author" content="Hernán Lijó">
+    <link rel="shortcut icon" href="../Multimedia/Escudo Piro fondo negro.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="../Multimedia/Escudo Piro sin fondo.jpg" alt="Escudo Servicio de Imagenes" class="imgpiro">
+            <input id="navbar-menu" type="checkbox" />
+            <label class="menu__check" for="navbar-menu">
+                <span class="material-symbols-outlined menu-abrir">menu</span>
+                <span class="menu-cerrar">X</span>
+            </label>
+            <ul class="navbar__list">
+                <li><a href="../index.html" class="btn1">Inicio</a></li>
+                <li><a href="Estudios.html" class="btn1">Estudios realizados</a></li>
+                <li><a href="Preparacion.html" class="btn1">Preparacion de estudios</a></li>
+                <li><a href="QuienesSomos.html" class="btn1">Quienes Somos</a></li>
+                <li><a href="Contacto.html" class="btn1">Contacto</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <!-- formulario de contacto -->
+        <form method="post" class="formulario">
+            <div class="filiatorio">
+                <label for="documento">Documento <input type="number" id="documento" placeholder="xxxxxxxx"
+                        title="Documento sin puntos" required=""></label>
+                <label for="apellidos">Apellidos <input type="text" id="apellidos" placeholder="Apellidos"
+                        required=""></label>
+            </div>
+            <div class="filiatorio">
+                <label for="nombres">Nombres <input type="text" id="nombres" placeholder="nombres" required=""></label>
+                <label for="Edad">Edad <input type="number" id="Edad" placeholder="edad"
+                        required="" min="0" max="110"></label>
+            </div>
+            <div class="contendedor-consulta">
+                <label for="consulta"><textarea class="consulta" type="textarea" id="consulta"
+                        placeholder="Ingrese aqui su consulta" required=""></textarea></label>
+            </div>
+            <div class="ingreso">
+                <input type="submit" value="Enviar consulta">
+                <input type="reset" value="Limpiar formulario">
+            </div>
+        </form>
+        <hr />
+        <!-- texto de contacto -->
+        <div class="textocontacto">
+            <p class="contacto1">Debido a la complejidad de los estudios que se realizan en nuestro servicio y a la gran
+                cantidad de pacientes, es necesario que los turnos se soliciten personalmente en el servicio, esto se
+                debe también a la necesidad de informar de manera efectiva la documentacion necesaria y la preparación
+                de los mismos. Sin embargo puede realizar consultas vía telefonica o a nuestro correo electronico.</p>
+            <br>
+            <p contacto="contacto2">Nos encontramos en el pasillo central del Hospital I. Pirovano frente al ervicio de
+                radiologia y laboratorio.</p>
+            <p contacto="contacto3">El horario de secretaria es de lunes a viernes de 8 a 18hs y los sabados de 8 a 14hs
+            </p>
+        </div>
+        <div class="maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2323.237096426973!2d-58.472377806227726!3d-34.564861096484655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb67d776e79c9%3A0xe8722cf090719409!2sHospital%20Pirovano!5e0!3m2!1ses-419!2sar!4v1684987829967!5m2!1ses-419!2sar"
+                width="700" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer class="footer">
+        <b class="footer__fono">Telefono: 4542-8620</b>
+        <b class="footer__dire">AV. Monroe 3555 (1430) CABA</b>
+        <div class="footer__mail">
+            <b>Email:</b><a href="tac.pirovano@gmail.com">Tac.pirovano@gmail.com</a>
+        </div>
+        <a href="https://www.instagram.com/residenciadxipirovano/" target="_blank"><img src="../Multimedia/IG.jpg"
+                alt="Instagram" class="footer__IG"></a>
+        <a href="https://www.facebook.com/tomografia.pirovano?locale=es_LA" target="_blank"><img
+                src="../Multimedia/fb.jpg" alt="Faceboock" class="footer__FB"></a>
+        <img src="../Multimedia/BAfondoamarillo.jpg" alt="Buenos Aires Ciudad" class="footer__ba">
+    </footer>
+
+</body>
+
+</html>
