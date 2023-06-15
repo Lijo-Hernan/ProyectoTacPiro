@@ -37,19 +37,25 @@
         <!-- formulario de contacto -->
         <form method="post" class="formulario">
             <div class="filiatorio">
+            <div class="dni">
                 <label for="documento">Documento <input type="number" id="documento" placeholder="xxxxxxxx"
                         title="Documento sin puntos" required=""></label>
+            </div>
+            <div class="apellido">
                 <label for="apellidos">Apellidos <input type="text" id="apellidos" placeholder="Apellidos"
                         required=""></label>
             </div>
-            <div class="filiatorio">
+            <div class="nombre">
                 <label for="nombres">Nombres <input type="text" id="nombres" placeholder="nombres" required=""></label>
-                <label for="Edad">Edad <input type="number" id="Edad" placeholder="edad"
-                        required="" min="0" max="110"></label>
             </div>
+            <div class="edad">    
+                <label for="Edad">Edad <input type="number" id="Edad" placeholder="edad" required="" min="0"
+                max="110"></label>
+            </div>
+        </div>
             <div class="contendedor-consulta">
                 <label for="consulta"><textarea class="consulta" type="textarea" id="consulta"
-                        placeholder="Ingrese aqui su consulta" required=""></textarea></label>
+                placeholder="Ingrese aqui su consulta" required=""></textarea></label>
             </div>
             <div class="ingreso">
                 <input type="submit" value="Enviar consulta">

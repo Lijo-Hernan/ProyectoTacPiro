@@ -385,20 +385,20 @@ main {
     }
 
 /* ========== POSICIONAMIENTO DE VENTANAS =========== */
-.vent_c {
+.vent_cerebro {
     top: 2vh;
     left: 50vh;
 }
-.vent_cu {
+.vent_cuello {
     top: 2vh;
     right: 100vh;
 
 }
-.vent_t {
+.vent_torax {
     top: 35vh;
     left: 50vh;
 }
-.vent_a {
+.vent_abdomen {
     top: 35vh;
     right: 100vh;
 }
@@ -516,14 +516,18 @@ main {
 
 .formulario {
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     margin: 0 2rem;
     padding: 1em;
-}
+    gap: 1rem;
 
+}
 .filiatorio {
-    width: 100%;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-rows: repeat(4 1fr);
+    justify-content: center;
+
 }
 
 .cotenedorconsulta {
@@ -536,6 +540,14 @@ main {
     justify-content: center;
     height: 8rem;
     width: 100%;
+}
+@media (min-width: 720px) {
+    .filiatorio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4 1fr);
+        justify-content: center;
+    }
 }
 
 .maps {
