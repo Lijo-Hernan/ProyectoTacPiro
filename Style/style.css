@@ -370,8 +370,6 @@ main {
         justify-content: center;
         padding: 1rem;
     }
-}
-
     /* ================ VENTANAS ESTUDIOS ================= */
     .check-estudios:checked~.ventana1 {
         display: flex;
@@ -411,7 +409,7 @@ main {
     .check-cierre:hover {
         background-color: red;
     }
-
+}
 /* ========== POSICIONAMIENTO DE VENTANAS =========== */
 .vent_cerebro {
     top: 2vh;
