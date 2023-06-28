@@ -1,0 +1,103 @@
+
+.tituloprinc {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "montserrat", Arial;
+    font-size: 2rem;
+}
+
+.Bienvenidos {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-style: italic;
+    height: 100%;
+    width: 100%;
+}
+
+.imgbienv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgbienv__imghospital {
+    width: 80%;
+}
+
+.pbienvenida {
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 1rem 2rem;
+}
+
+@media (max-width:1024px) {
+    .articulos {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        text-align: justify;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+
+    .articulos__articulo1,
+    .articulos__articulo2,
+    .articulos__articulo3 {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+        align-items: center;
+        justify-content: center;
+        border: solid rgb(119, 119, 119) 2px;
+        border-radius: 2rem;
+    }
+}
+
+.articulos p {
+    padding: 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.articulos__imgtomo,
+.articulos__imginformes {
+    height: 20rem;
+}
+
+.articulos__bomba {
+    height: 20rem;
+}
+
+@media (min-width:1024px) {
+    .articulos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .articulos__articulo1,
+    .articulos__articulo2,
+    .articulos__articulo3 {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem;
+        align-items: center;
+        justify-content: center;
+        border: solid rgb(119, 119, 119) 2px;
+        border-radius: 2rem;
+    }
+
+    .articulos__imgtomo,
+    .articulos__imginformes {
+        height: 12rem;
+    }
+
+    .articulos__imgbomba {
+        height: 20rem;
+    }
+
+}

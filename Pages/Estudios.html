@@ -16,13 +16,13 @@
 <body>
     <header>
         <div class="header">
-            <img src="../Multimedia/Escudo Piro sin fondo.jpg" alt="Escudo Servicio de Imagenes" class="imgpiro">
+            <img src="../Multimedia/Escudo Piro sin fondo.jpg" alt="Escudo Servicio de Imagenes" class="header__img">
             <input id="navbar-menu" type="checkbox" />
             <label class="menu__check" for="navbar-menu">
                 <span class="material-symbols-outlined menu-abrir">menu</span>
                 <span class="menu-cerrar">X</span>
             </label>
-            <ul class="navbar__list">
+            <ul class="header__list">
                 <li><a href="../index.html" class="btn1">Inicio</a></li>
                 <li><a href="Estudios.html" class="btn1">Estudios realizados</a></li>
                 <li><a href="Preparacion.html" class="btn1">Preparación de estudios</a></li>
@@ -34,11 +34,11 @@
     </header>
     <hr>
     <main>
-        <div class="textosestudios">
-            <h2 class="estudioslistados">Aquí encontrara listados los estudios que realizamos y una breve reseña sobre
+        <div class="estudios">
+            <h2 class="estudios__listados">Aquí encontrara listados los estudios que realizamos y una breve reseña sobre
                 ellos.</h2>
-            <h4 class="seleccion">Seleccione de la lista el estudio de interés</h4>
-            <h4 class="convinacionestudios">Todos estos estudios son combinables y pueden hacerse con o sin contraste
+            <h4 class="estudios__seleccion">Seleccione de la lista el estudio de interés</h4>
+            <h4 class="estudios__convinacion">Todos estos estudios son combinables y pueden hacerse con o sin contraste
                 oral y endovenoso según corresponda.</h4><br>
         </div>
         <article class="article-estudios">
@@ -50,7 +50,7 @@
                             <label for="cerebro">Cerebro/Encefalo</label>
                             <div class="ventana1 vent_cerebro">
                                 <label for="cerebro" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/cereb_par.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <span class="ptool">
                                     Se podrá visualizar tanto el parénquima cerebral como los huesos del cráneo a fin de
                                     buscar
@@ -62,7 +62,7 @@
                                 for="oidos"> Peñascos/Oídos</label>
                             <div class="ventana1 vent_cerebro">
                                 <label for="oidos" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/cai_ax.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <span class="ptool">
                                     Estudio en el que se focaliza el estudio de las estructuras de ambos oídos
                                     visualizando las 3 secciones de los mismos: externo, medio y interno.
@@ -73,7 +73,7 @@
                                 name="select" /><label for="orbitas">Órbitas</label>
                             <div class="ventana1 vent_cerebro">
                                 <label for="orbitas" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/mcf_ax.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <span class="ptool">
                                     Se focaliza en la posibilidad de estudiar tanto los nervios ópticos como las
                                     cavidades orbitarias, su contenido y la estructuras óseas que la conforman
@@ -84,7 +84,7 @@
                                 for="macizo">Macizo facial/Senos Paranasales</label>
                             <div class="ventana1 vent_cerebro">
                                 <label for="macizo" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/mcf_ax.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <span class="ptool">
                                     Este estudio ayuda a observar patologías de las cavidades neumáticas del proceso
                                     facial, en caso de situación traumática se incluye también el maxilar inferior para descartar fracturas o
@@ -96,7 +96,7 @@
                                 for="angio1">Angiotomografía de vasos intracraneales</label>
                             <div class="ventana1 vent_cerebro">
                                 <label for="angio1" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/cls.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <span class="ptool">
                                     Estudio realizado con contraste endovenoso mediante el cual se visualiza la
                                     vascularización  del cráneo a fin de descartar o visualizar lesiones vasculares 
@@ -108,7 +108,7 @@
                             for="scan">Scan corporal oseo</label>
                         <div class="ventana1 vent_cerebro">
                             <label for="scan" class="check-cierre">X</label>
-                            <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                            <img src="../Multimedia/cai_ax.jpg" alt="imagen de cerebro" class="imgtool"><br>
                             <p class="ptool">
                                 Mediante el escaneo del cuerpo completo se estudia la integridad de todos los huesos
                                 del
@@ -125,7 +125,7 @@
                                 for="cuello">Cuello</label>
                             <div class="ventana1 vent_cuello">
                                 <label for="cuello" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/cuello_coro.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Estudio, preferentemente realizado con contraste endovenoso, para visualizar las
                                     numerosas estructuras que son parte del cuello, musculares, vasculares, orgánicas, etc.
@@ -136,7 +136,7 @@
                                 name="select" /><label for="via-aerea">Vía aérea superior</label>
                             <div class="ventana1 vent_cuello">
                                 <label for="via-aerea" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/cls.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Mediante una reconstrucción especial se puede visualizar la permeabilidad de la vía
                                     aérea o la falta de esta mediante obstrucciones.
@@ -146,7 +146,7 @@
                         <li><input id="cervical" type="checkbox" class="check-estudios"name="select" /><label for="cervical">Columna Cervical</label>
                             <div class="ventana1 vent_cuello">
                                 <label for="cervical" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/cls.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Principalmente especializado en la porción ósea de la columna se buscan lesiones de
                                     este tipo traumáticas o crónicas.
@@ -157,7 +157,7 @@
                                 for="angio2">Angiotomografía de vasos de cuello</label>
                             <div class="ventana1 vent_cuello">
                                 <label for="angio2" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/cls.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Pensado para poder estudiar los vasos del cuello pudiendo diferenciarlos, a través
                                     del
@@ -172,7 +172,7 @@
                         <li><input id="torax" type="checkbox" class="check-estudios" name="select" /><label for="torax">Toráx</label>
                             <div class="ventana1 vent_torax">
                                 <label for="torax" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/torax_med.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Gold standard para las patologías respiratorias, permite ver los pulmones en alta
                                     resolución, también permite estudiar las estructuras del mediastino.
@@ -183,7 +183,7 @@
                                 name="select" /><label for="parrilla">Parrilla Costal</label>
                             <div class="ventana1 vent_torax">
                                 <label for="parrilla" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/torax_par.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Visualización de las estructuras óseas del tórax.
                                 </p>
@@ -193,7 +193,7 @@
                                 for="tep">Estudio para trombo embolismo pulmonar (TEP)</label>
                             <div class="ventana1 vent_torax">
                                 <label for="tep" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/tep_coro.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Permite descartar o confirmar de manera rápida y eficiente, mediante el contraste
                                     endovenoso, esta patología grave.
@@ -204,7 +204,7 @@
                                 for="angio3">Angiotomografía de Aorta.</label>
                             <div class="ventana1 vent_torax">
                                 <label for="angio3" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/tep_ax.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Utilizado para el estudio del vaso mas importante de la anatomía y su integridad
                                 </p>
@@ -214,7 +214,7 @@
                                 for="dorsal">Columna dorsal</label>
                             <div class="ventana1 vent_torax">
                                 <label for="dorsal" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/torax_med.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Principalmente especializado en la porción ósea de la columna se buscan lesiones de
                                     este tipo traumáticas o crónicas.
@@ -230,7 +230,7 @@
                                 name="select" /><label for="abdomen">Abdomen</label>
                             <div class="ventana1 vent_abdomen">
                                 <label for="abdomen" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/abd.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Preferentemente realizado con doble contraste, se pueden visualizar las estructuras
                                     del Abdomen y estudiarlas en profundidad
@@ -241,7 +241,7 @@
                                 for="pelvis">Pelvis</label>
                             <div class="ventana1 vent_abdomen">
                                 <label for="pelvis" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/pelvis.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Preferentemente realizado con doble contraste, se pueden visualizar las estructuras
                                     de la Pelvis y estudiarlas en profundidad
@@ -251,7 +251,7 @@
                                 for="urotac">Urotc</label>
                             <div class="ventana1 vent_abdomen">
                                 <label for="urotac" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/pelvis.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Se estudian las estructuras del árbol urinario descartando litiasis y otras
                                     patologías crónicas.
@@ -262,7 +262,7 @@
                                 for="entero">Enterotc</label>
                             <div class="ventana1 vent_abdomen">
                                 <label for="entero" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/abd.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Mediante la dilatación del intestino con manitol se visualiza la integridad del
                                     mismo
@@ -273,7 +273,7 @@
                                 for="cls">Columna lumbosacrocoxigea</label>
                             <div class="ventana1 vent_abdomen">
                                 <label for="cls" class="check-cierre">X</label>
-                                <img src="../Multimedia/tc2.jpg" alt="imagen de cerebro" class="imgtool"><br>
+                                <img src="../Multimedia/cls.jpg" alt="imagen de cerebro" class="imgtool"><br>
                                 <p class="ptool">
                                     Principalmente especializado en la porción ósea de la columna se buscan lesiones de
                                     este tipo traumáticas o crónicas.

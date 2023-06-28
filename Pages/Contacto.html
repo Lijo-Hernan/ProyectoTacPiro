@@ -16,13 +16,13 @@
 <body>
     <header>
         <div class="header">
-            <img src="../Multimedia/Escudo Piro sin fondo.jpg" alt="Escudo Servicio de Imagenes" class="imgpiro">
+            <img src="../Multimedia/Escudo Piro sin fondo.jpg" alt="Escudo Servicio de Imagenes" class="header__img">
             <input id="navbar-menu" type="checkbox" />
             <label class="menu__check" for="navbar-menu">
                 <span class="material-symbols-outlined menu-abrir">menu</span>
                 <span class="menu-cerrar">X</span>
             </label>
-            <ul class="navbar__list">
+            <ul class="header__list">
                 <li><a href="../index.html" class="btn1">Inicio</a></li>
                 <li><a href="Estudios.html" class="btn1">Estudios realizados</a></li>
                 <li><a href="Preparacion.html" class="btn1">Preparación de estudios</a></li>
@@ -37,19 +37,19 @@
         <!-- formulario de contacto -->
         <form method="post" class="formulario">
             <div class="filiatorio">
-            <div class="dni">
-                <label for="documento">Documento<input type="number" id="documento" placeholder="xxxxxxxx"
+            <div class="filiatorio__dni">
+                <label for="documento">Documento <input type="number" id="documento" placeholder="xxxxxxxx"
                         title="Documento sin puntos" required=""></label>
             </div>
-            <div class="apellido">
-                <label for="apellidos">Apellidos<input type="text" id="apellidos" placeholder="Apellidos"
+            <div class="filiatorio__apellido">
+                <label for="apellidos">Apellidos <input type="text" id="apellidos" placeholder="Apellidos"
                         required=""></label>
             </div>
-            <div class="nombre">
-                <label for="nombres">Nombres<input type="text" id="nombres" placeholder="nombres" required=""></label>
+            <div class="filiatorio__nombre">
+                <label for="nombres">Nombres <input type="text" id="nombres" placeholder="nombres" required=""></label>
             </div>
-            <div class="edad">    
-                <label for="Edad">Edad<input type="number" id="Edad" placeholder="edad" required="" min="0"
+            <div class="filiatorio__edad">    
+                <label for="Edad">Edad <input type="number" id="Edad" placeholder="edad" required="" min="0"
                 max="110"></label>
             </div>
         </div>

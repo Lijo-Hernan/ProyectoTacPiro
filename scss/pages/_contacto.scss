@@ -1,0 +1,48 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    padding: 1em;
+    gap: 1rem;
+
+}
+.filiatorio {
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cotenedorconsulta {
+    height: 8rem;
+    width: 9rem;
+}
+
+.consulta {
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    width: 100%;
+}
+@media (min-width: 720px) {
+    .filiatorio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4 1fr);
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+}
+
+/* ========= TEXTO DE CONTACTO ============== */
+.textocontacto {
+    display: inline-block;
+    font-size: 18px;
+    text-align: justify;
+    padding: 1rem 1rem;
+}

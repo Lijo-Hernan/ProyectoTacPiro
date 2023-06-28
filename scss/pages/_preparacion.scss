@@ -1,0 +1,36 @@
+.intro-seguridad {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4vh 1vw;
+
+    .titulo-seguridad {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        padding: 2rem 1rem;
+        border: solid rgb(150, 149, 149);
+        border-radius: 1rem;
+    }
+
+    .img-contraste {
+        height: 15rem;
+        display: none;
+    }
+
+    @media (min-width:1200px) {
+        .img-contraste {
+        display: flex;
+        }
+    }
+}
+
+    .art-indicaciones {
+        padding: 3vh;
+    
+
+    .p-indicaciones {
+        text-align: justify;
+    }
+}
