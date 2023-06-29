@@ -263,6 +263,9 @@ main {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
+.lista-estudios .estudios__boton {
+  display: none;
+}
 .lista-estudios .lista__inf {
   list-style: none;
   padding-left: 2rem;
