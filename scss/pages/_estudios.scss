@@ -1,4 +1,5 @@
 .estudios {
+    width: 100%;
     .estudios__listados {
         display: none;
     }
@@ -11,19 +12,18 @@
         display: flex;
         text-align: justify;
         justify-content: center;
-        padding: 0.5rem;
+        padding: 1.5vh;
         font-size: larger;
     }
-
-
 }
 
 .lista-estudios {
     list-style: none;
-    padding: 2rem;
+    padding: 2vh;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1rem;
+    width: 100%;
 
     .estudios__boton {
         display: none;
@@ -54,6 +54,7 @@
 }
 
 @media (min-width: 1024px) {
+
     .estudios {
         .estudios__listados {
             display: flex;
@@ -83,6 +84,7 @@
         grid-template-areas:
             "cerebro cuello"
             "torax abdomen";
+        width: 100%;
 
         .cerebro {
             grid-area: cerebro;

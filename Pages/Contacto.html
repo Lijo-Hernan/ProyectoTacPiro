@@ -37,25 +37,26 @@
         <!-- formulario de contacto -->
         <form method="post" class="formulario">
             <div class="filiatorio">
-            <div class="filiatorio__dni">
-                <label for="documento">Documento <input type="number" id="documento" placeholder="xxxxxxxx"
-                        title="Documento sin puntos" required=""></label>
+                <div class="filiatorio__dni">
+                    <label for="documento">Documento <input type="number" id="documento" placeholder="xxxxxxxx"
+                            title="Documento sin puntos" required=""></label>
+                </div>
+                <div class="filiatorio__apellido">
+                    <label for="apellidos">Apellidos <input type="text" id="apellidos" placeholder="Apellidos"
+                            required=""></label>
+                </div>
+                <div class="filiatorio__nombre">
+                    <label for="nombres">Nombres <input type="text" id="nombres" placeholder="nombres"
+                            required=""></label>
+                </div>
+                <div class="filiatorio__edad">
+                    <label for="Edad">Edad <input type="number" id="Edad" placeholder="edad" required="" min="0"
+                            max="110"></label>
+                </div>
             </div>
-            <div class="filiatorio__apellido">
-                <label for="apellidos">Apellidos <input type="text" id="apellidos" placeholder="Apellidos"
-                        required=""></label>
-            </div>
-            <div class="filiatorio__nombre">
-                <label for="nombres">Nombres <input type="text" id="nombres" placeholder="nombres" required=""></label>
-            </div>
-            <div class="filiatorio__edad">    
-                <label for="Edad">Edad <input type="number" id="Edad" placeholder="edad" required="" min="0"
-                max="110"></label>
-            </div>
-        </div>
             <div class="contendedor-consulta">
                 <label for="consulta"><textarea class="consulta" type="textarea" id="consulta"
-                placeholder="Ingrese aqui su consulta" required=""></textarea></label>
+                        placeholder="Ingrese aqui su consulta" required=""></textarea></label>
             </div>
             <div class="ingreso">
                 <input type="submit" value="Enviar consulta">
@@ -72,7 +73,8 @@
             <br>
             <p contacto="contacto2">Nos encontramos en el pasillo central del Hospital I. Pirovano frente al servicio de
                 radiología y laboratorio.</p>
-            <p contacto="contacto3">El horario de secretaria es de lunes a viernes de 8 a 18hs y los sábados de 8 a 14 hs.
+            <p contacto="contacto3">El horario de secretaria es de lunes a viernes de 8 a 18hs y los sábados de 8 a 14
+                hs.
             </p>
         </div>
         <div class="maps">
@@ -84,19 +86,19 @@
     </main>
     <footer class="footer">
         <div class="footer__datos">
-        <b class="footer__fono">Telefono: 4542-8620</b>
-        <b class="footer__dire">AV. Monroe 3555 (1430) CABA</b>
-        <div class="footer__mail">
-            <b>Email:</b><a href="tac.pirovano@gmail.com">Tac.pirovano@gmail.com</a>
+            <b class="footer__fono">Telefono: 4542-8620</b>
+            <b class="footer__dire">AV. Monroe 3555 (1430) CABA</b>
+            <div class="footer__mail">
+                <b>Email:</b><a href="tac.pirovano@gmail.com">Tac.pirovano@gmail.com</a>
+            </div>
         </div>
-    </div>
-    <div class="footer__social">
-        <a href="https://www.instagram.com/residenciadxipirovano/" target="_blank"><img src="../Multimedia/IG.jpg"
-                alt="Instagram" class="footer__IG"></a>
-        <a href="https://www.facebook.com/tomografia.pirovano?locale=es_LA" target="_blank"><img
-                src="../Multimedia/fb.jpg" alt="Faceboock" class="footer__FB"></a>
-        <img src="../Multimedia/BAfondoamarillo.jpg" alt="Buenos Aires Ciudad" class="footer__ba">
-    </div>
+        <div class="footer__social">
+            <a href="https://www.instagram.com/residenciadxipirovano/" target="_blank"><img src="../Multimedia/IG.jpg"
+                    alt="Instagram" class="footer__IG"></a>
+            <a href="https://www.facebook.com/tomografia.pirovano?locale=es_LA" target="_blank"><img
+                    src="../Multimedia/fb.jpg" alt="Faceboock" class="footer__FB"></a>
+            <img src="../Multimedia/BAfondoamarillo.jpg" alt="Buenos Aires Ciudad" class="footer__ba">
+        </div>
     </footer>
 </body>
 

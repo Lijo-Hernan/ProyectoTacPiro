@@ -2,10 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: montserrat, serif;
 }
 
 main {
   background-color: #d8d8d8;
+}
+
+hr {
+  margin: 0;
+  opacity: 1;
 }
 
 .header {
@@ -146,103 +152,86 @@ main {
   }
 }
 
-.tituloprinc {
+.bienvenida .bienvenida__titulo {
   display: flex;
   justify-content: center;
   text-align: center;
   font-family: "montserrat", Arial;
   font-size: 2rem;
 }
-
-.Bienvenidos {
+.bienvenida .bienvenida__bienvenidos {
   display: flex;
   justify-content: center;
   font-size: 2rem;
   font-style: italic;
-  height: 100%;
-  width: 100%;
 }
-
-.imgbienv {
+.bienvenida .imgbienv {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
-
-.imgbienv__imghospital {
-  width: 80%;
+.bienvenida .imgbienv__carrusel {
+  width: 65%;
 }
-
-.pbienvenida {
-  font-size: 1.5rem;
+.bienvenida .bienvenida__texto {
+  font-size: x-large;
   text-align: justify;
   padding: 1rem 2rem;
 }
 
-@media (max-width: 1024px) {
+.articulos__tarjeta {
+  display: flex;
+  flex-direction: column;
+  margin: 1vw 0;
+  padding: 1vw 1vw;
+  align-items: center;
+  justify-content: center;
+  border: solid rgb(119, 119, 119) 2px;
+  border-radius: 2vw;
+  box-shadow: 3px 3px 10px;
+}
+
+.articulos p {
+  padding: 2vw;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.articulos__img {
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
   .articulos {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     text-align: justify;
-    padding: 1rem 2rem;
-    gap: 1rem;
+    padding: 1vh 2vh;
+    gap: 1vh;
   }
-  .articulos__articulo1,
-  .articulos__articulo2,
-  .articulos__articulo3 {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1rem;
-    align-items: center;
-    justify-content: center;
-    border: solid rgb(119, 119, 119) 2px;
-    border-radius: 2rem;
-    box-shadow: 3px 3px 10px;
+  .articulos__img {
+    width: 80%;
+    object-fit: cover;
   }
 }
-.articulos p {
-  padding: 2rem;
-  text-align: justify;
-  font-size: 1.3rem;
-}
-
-.articulos__imgtomo,
-.articulos__imginformes {
-  height: 20rem;
-}
-
-.articulos__bomba {
-  height: 20rem;
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .articulos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0.5rem;
-    gap: 0.5rem;
-  }
-  .articulos__articulo1,
-  .articulos__articulo2,
-  .articulos__articulo3 {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1rem;
-    align-items: center;
     justify-content: center;
-    border: solid rgb(119, 119, 119) 2px;
-    border-radius: 2rem;
-    box-shadow: 3px 3px 10px;
+    text-align: justify;
+    padding: 1vh 2vh;
+    gap: 1vh;
   }
-  .articulos__imgtomo,
-  .articulos__imginformes {
-    height: 12rem;
+  .articulos__img {
+    width: 100%;
   }
-  .articulos__imgbomba {
-    height: 20rem;
-  }
+}
+.estudios {
+  width: 100%;
 }
 .estudios .estudios__listados {
   display: none;
@@ -254,16 +243,17 @@ main {
   display: flex;
   text-align: justify;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 1.5vh;
   font-size: larger;
 }
 
 .lista-estudios {
   list-style: none;
-  padding: 2rem;
+  padding: 2vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1rem;
+  width: 100%;
 }
 .lista-estudios .estudios__boton {
   display: none;
@@ -310,6 +300,7 @@ main {
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
     grid-template-areas: "cerebro cuello" "torax abdomen";
+    width: 100%;
   }
   .lista-estudios .cerebro {
     grid-area: cerebro;
@@ -503,10 +494,10 @@ main {
 .personal .personal__administrativos1 {
   list-style: none;
 }
-.personal .perosnal__medguardia1 {
+.personal .personal__medguardia1 {
   list-style: none;
 }
-.personal .personal__tecnicos1 {
+.personal .perosnal__tecnicos1 {
   list-style: none;
 }
 
