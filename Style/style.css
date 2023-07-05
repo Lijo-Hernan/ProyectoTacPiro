@@ -14,13 +14,17 @@ hr {
   opacity: 1;
 }
 
+ul, ol {
+  list-style: none;
+}
+
 .header {
-  background: linear-gradient(to right, #fcd10c 0%, #fcd10c 40%, #aadac3 70%, #00b9f2 100%);
+  background: linear-gradient(to right, #fcd10c, #fcd10c, #aadac3 70%, #00b9f2 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header .header__img {
+.header__img {
   justify-self: left;
   height: 6rem;
   width: 6rem;
@@ -28,7 +32,7 @@ hr {
   border-radius: 50%;
 }
 @media (max-width: 1024px) {
-  .header .header__list {
+  .header__list {
     list-style: none;
     display: flex;
     align-items: center;
@@ -80,7 +84,7 @@ hr {
     justify-content: flex-end;
     height: 2em;
   }
-  .header .header__list {
+  .header__list {
     list-style: none;
     display: flex;
     align-items: center;
@@ -112,54 +116,53 @@ hr {
   grid-template-columns: 1fr 1fr;
   width: 100%;
 }
-.footer .footer__social {
+.footer__social {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin: 0.5rem;
 }
-.footer .footer__datos {
+.footer__datos {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin: 0 0.5rem;
 }
-.footer .footer__ba {
+.footer__ba {
   height: 1.5rem;
   width: 2.5rem;
 }
-.footer .footer__IG {
+.footer__IG {
   height: 1.5rem;
   border-radius: 50%;
 }
-.footer .footer__FB {
+.footer__FB {
   height: 1.5rem;
   border-radius: 50%;
 }
+
 @media (min-width: 1024px) {
-  .footer .footer {
-    background-color: #fcd10c;
+  .footer {
     display: grid;
     width: 100%;
     grid-template-columns: 2fr 1fr;
   }
-  .footer .footer__social,
-  .footer .footer__datos {
+  .footer__social, .footer__datos {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
   }
 }
-
-.bienvenida .bienvenida__titulo {
+.bienvenida__titulo {
   display: flex;
   justify-content: center;
+  align-items: none;
   text-align: center;
   font-family: "montserrat", Arial;
   font-size: 2rem;
 }
-.bienvenida .bienvenida__bienvenidos {
+.bienvenida__bienvenidos {
   display: flex;
   justify-content: center;
   font-size: 2rem;
@@ -173,14 +176,20 @@ hr {
   overflow: hidden;
 }
 .bienvenida .imgbienv__carrusel {
-  width: 65%;
+  width: 75%;
 }
-.bienvenida .bienvenida__texto {
+.bienvenida__texto {
   font-size: x-large;
   text-align: justify;
   padding: 1rem 2rem;
 }
 
+.articulos {
+  display: grid;
+  justify-content: center;
+  text-align: justify;
+  padding: 1vh 2vh;
+}
 .articulos__tarjeta {
   display: flex;
   flex-direction: column;
@@ -192,39 +201,32 @@ hr {
   border-radius: 2vw;
   box-shadow: 3px 3px 10px;
 }
-
 .articulos p {
   padding: 2vw;
   text-align: justify;
   font-size: 1.5rem;
 }
-
 .articulos__img {
   height: 100%;
 }
 
 @media (max-width: 1200px) {
   .articulos {
-    display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
-    text-align: justify;
-    padding: 1vh 2vh;
     gap: 1vh;
   }
   .articulos__img {
     width: 80%;
     object-fit: cover;
   }
+  .imgbienv__carrusel {
+    width: 90%;
+  }
 }
 @media (min-width: 1200px) {
   .articulos {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    text-align: justify;
-    padding: 1vh 2vh;
-    gap: 1vh;
+    gap: 1.5vh;
   }
   .articulos__img {
     width: 100%;
@@ -241,80 +243,84 @@ hr {
 }
 .estudios .estudios__convinacion {
   display: flex;
-  text-align: justify;
   justify-content: center;
+  align-items: none;
+  text-align: justify;
   padding: 1.5vh;
   font-size: larger;
 }
 
-.lista-estudios {
-  list-style: none;
+.contenedor__estudios .lista-estudios {
   padding: 2vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1rem;
   width: 100%;
+  padding-bottom: 40vh;
 }
-.lista-estudios .estudios__boton {
+.contenedor__estudios .lista-estudios .estudios__boton {
   display: none;
 }
-.lista-estudios .lista__inf {
-  list-style: none;
+.contenedor__estudios .lista-estudios .lista__inf {
   padding-left: 2rem;
 }
-.lista-estudios .lista {
+.contenedor__estudios .lista-estudios .lista {
   border: solid grey;
   padding-left: 2rem;
   border-radius: 0.5rem;
   transition: 0.5s;
 }
-.lista-estudios .lista:hover {
+.contenedor__estudios .lista-estudios .lista:hover {
   box-shadow: 3px 3px 10px;
 }
-.lista-estudios .check-estudios,
-.lista-estudios .ventana1 {
+.contenedor__estudios .lista-estudios .check-estudios,
+.contenedor__estudios .lista-estudios .ventana1 {
   display: none;
 }
 
 @media (min-width: 1024px) {
   .estudios .estudios__listados {
     display: flex;
-    text-align: justify;
     justify-content: center;
+    align-items: none;
+    text-align: justify;
     padding: 1rem;
   }
   .estudios .estudios__seleccion {
     display: flex;
-    text-align: justify;
     justify-content: center;
+    align-items: none;
+    text-align: justify;
     padding: 0.5rem;
   }
-  .lista-estudios {
-    font-family: "montsserat", arial;
-    padding: 1rem;
+  .contenedor__estudios {
+    display: flex;
+    justify-content: center;
+    align-items: none;
+  }
+  .contenedor__estudios .lista-estudios {
+    padding: 1vw;
     display: grid;
-    position: relative;
-    margin: 0 auto;
-    max-width: 1300px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
     grid-template-areas: "cerebro cuello" "torax abdomen";
-    width: 100%;
+    max-width: 1300px;
+    padding-bottom: 40vh;
   }
-  .lista-estudios .cerebro {
+  .contenedor__estudios .lista-estudios .cerebro {
     grid-area: cerebro;
   }
-  .lista-estudios .cuello {
+  .contenedor__estudios .lista-estudios .cuello {
     grid-area: cuello;
   }
-  .lista-estudios .torax {
+  .contenedor__estudios .lista-estudios .torax {
     grid-area: torax;
   }
-  .lista-estudios .abdomen {
+  .contenedor__estudios .lista-estudios .abdomen {
     grid-area: abdomen;
   }
-  .ventana1 {
+  .contenedor__estudios .ventana1 {
     width: 50%;
     height: auto;
     max-width: 65rem;
@@ -325,11 +331,12 @@ hr {
     text-align: center;
     border-radius: 8px;
     background-color: #7e7e7e;
+    max-width: 800px;
   }
-  .check-estudios:checked ~ .ventana1 {
+  .contenedor__estudios .check-estudios:checked ~ .ventana1 {
     display: flex;
   }
-  .check-cierre {
+  .contenedor__estudios .check-cierre {
     position: absolute;
     align-self: flex-end;
     font-size: 1.3rem;
@@ -341,87 +348,108 @@ hr {
     color: white;
     opacity: 70%;
   }
-  .check-cierre:hover {
+  .contenedor__estudios .check-cierre:hover {
     background-color: red;
   }
-  .imgtool {
+  .contenedor__estudios .imgtool {
     height: 15rem;
     width: 15rem;
   }
-  .vent_cerebro {
-    top: 2vh;
+  .contenedor__estudios .vent_cerebro {
+    top: 300px;
     left: 22%;
   }
-  .vent_cuello {
-    top: 2vh;
+  .contenedor__estudios .vent_cuello {
+    top: 300px;
     right: 48%;
   }
-  .vent_torax {
-    top: 2vh;
+  .contenedor__estudios .vent_torax {
+    top: 300px;
     left: 22%;
   }
-  .vent_abdomen {
-    top: 2vh;
+  .contenedor__estudios .vent_abdomen {
+    top: 300px;
     right: 48%;
   }
 }
-.intro-seguridad {
+.seguridad {
   display: flex;
-  width: 100%;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   padding: 4vh 1vw;
 }
-.intro-seguridad .titulo-seguridad {
+.seguridad__titulo {
   display: flex;
   justify-content: center;
+  align-items: none;
   font-size: 3rem;
   padding: 2rem 1rem;
   border: solid rgb(150, 149, 149);
   border-radius: 1rem;
 }
-.intro-seguridad .img-contraste {
-  height: 15rem;
+.seguridad__img {
   display: none;
 }
 @media (min-width: 1200px) {
-  .intro-seguridad .img-contraste {
+  .seguridad__img {
     display: flex;
+    height: 15rem;
   }
 }
 
-.art-indicaciones {
+.indicaciones {
   padding: 3vh;
+  padding-bottom: 40vh;
 }
-.art-indicaciones .p-indicaciones {
+.indicaciones__p {
   text-align: justify;
 }
 
 .formulario {
   display: flex;
+  justify-content: none;
+  align-items: center;
   flex-direction: column;
   margin: 0 2rem;
-  padding: 1em;
+  padding: 1rem;
   gap: 1rem;
+  overflow: hidden;
 }
-
-.filiatorio {
+.formulario .filiatorio {
   display: grid;
   grid-template-rows: repeat(4 1fr);
   justify-content: center;
   gap: 1rem;
+  font-size: 1rem;
+  max-width: 1300px;
 }
-
-.cotenedorconsulta {
-  height: 8rem;
-  width: 9rem;
-}
-
-.consulta {
+.formulario .contendedor-consulta {
   display: flex;
   justify-content: center;
+  align-items: none;
   height: 8rem;
+  width: 80%;
+  max-width: 1300px;
+}
+.formulario .contendedor-consulta .consulta {
+  height: 100%;
   width: 100%;
+}
+
+/* ========= TEXTO DE CONTACTO ============== */
+.textocontacto {
+  display: inline-block;
+  font-size: 1rem;
+  text-align: justify;
+  padding: 1vw 2vw;
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  padding: 3vw 3vw 30vh 3vw;
 }
 
 @media (min-width: 720px) {
@@ -432,41 +460,33 @@ hr {
     justify-content: center;
     gap: 1rem;
   }
+  .maps {
+    padding: 3vw 3vw 5vh 3vw;
+  }
 }
-.maps {
-  display: flex;
-  justify-content: center;
-}
-
-/* ========= TEXTO DE CONTACTO ============== */
-.textocontacto {
-  display: inline-block;
-  font-size: 18px;
-  text-align: justify;
-  padding: 1rem 1rem;
-}
-
 .imgnosotros {
   display: flex;
   justify-content: space-around;
+  align-items: none;
   height: 18rem;
   padding: 1rem;
   display: none;
 }
-.imgnosotros .Bruno,
-.imgnosotros .Santti,
-.imgnosotros .Lijo {
+.imgnosotros__bruno, .imgnosotros__santti, .imgnosotros__lijo {
   height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-size: 1.5rem;
 }
 
 @media (min-width: 720px) {
   .imgnosotros {
     display: flex;
+  }
+  .personal {
+    padding-bottom: 10vh;
   }
 }
 .textonosotros {
@@ -478,27 +498,16 @@ hr {
 
 /* =========== LISTA PERSONAL ============= */
 .personal {
-  padding: 1rem;
+  padding: 2vw;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto auto;
   gap: 1rem;
+  padding-bottom: 20vh;
 }
 .personal .personal__jefes {
   grid-column: span 2;
   text-align: center;
-}
-.personal .personal__medicos1 {
-  list-style: none;
-}
-.personal .personal__administrativos1 {
-  list-style: none;
-}
-.personal .personal__medguardia1 {
-  list-style: none;
-}
-.personal .perosnal__tecnicos1 {
-  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

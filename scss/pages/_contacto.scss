@@ -1,29 +1,45 @@
 .formulario {
-    display: flex;
+    @include flexbox (none, center);
     flex-direction: column;
     margin: 0 2rem;
-    padding: 1em;
+    padding: 1rem;
     gap: 1rem;
+    overflow: hidden;
 
-}
 .filiatorio {
     display: grid;
     grid-template-rows: repeat(4 1fr);
     justify-content: center;
     gap: 1rem;
+    font-size: 1rem;
+    max-width: 1300px;
 }
 
-.cotenedorconsulta {
+.contendedor-consulta {
+    @include flexbox (center, none);
     height: 8rem;
-    width: 9rem;
-}
+    width: 80%;
+    max-width: 1300px;
 
 .consulta {
-    display: flex;
-    justify-content: center;
-    height: 8rem;
+    height: 100%;
     width: 100%;
 }
+}
+}
+
+/* ========= TEXTO DE CONTACTO ============== */
+.textocontacto {
+    display: inline-block;
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1vw 2vw;
+}
+.maps {
+    @include flexbox (center, none);
+    padding: 3vw 3vw 30vh 3vw;
+}
+
 @media (min-width: 720px) {
     .filiatorio {
         display: grid;
@@ -32,17 +48,9 @@
         justify-content: center;
         gap: 1rem;
     }
+    .maps {
+        padding: 3vw 3vw 5vh 3vw;
+    }
 }
 
-.maps {
-    display: flex;
-    justify-content: center;
-}
 
-/* ========= TEXTO DE CONTACTO ============== */
-.textocontacto {
-    display: inline-block;
-    font-size: 18px;
-    text-align: justify;
-    padding: 1rem 1rem;
-}

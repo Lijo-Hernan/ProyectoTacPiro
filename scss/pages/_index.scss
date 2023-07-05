@@ -1,13 +1,12 @@
 .bienvenida {
-    .bienvenida__titulo {
-        display: flex;
-        justify-content: center;
+    &__titulo {
+        @include flexbox (center, none);
         text-align: center;
         font-family: "montserrat", Arial;
         font-size: 2rem;
     }
 
-    .bienvenida__bienvenidos {
+    &__bienvenidos {
         display: flex;
         justify-content: center;
         font-size: 2rem;
@@ -17,75 +16,77 @@
 
     .imgbienv {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox (center, center);
         overflow: hidden;
+
+        &__carrusel {
+            width: 75%;
+        }
     }
 
-    .imgbienv__carrusel {
-        width: 65%;
-    }
-
-    .bienvenida__texto {
+    &__texto {
         font-size: x-large;
         text-align: justify;
         padding: 1rem 2rem;
     }
 }
 
-.articulos__tarjeta {
-    display: flex;
-    flex-direction: column;
-    margin: 1vw 0;
-    padding: 1vw 1vw;
-    align-items: center;
+.articulos {
+
+    display: grid;
     justify-content: center;
-    border: solid rgb(119, 119, 119) 2px;
-    border-radius: 2vw;
-    box-shadow: 3px 3px 10px;
-}
-
-.articulos p {
-    padding: 2vw;
     text-align: justify;
-    font-size: 1.5rem;
-}
+    padding: 1vh 2vh;
 
-.articulos__img {
-    height: 100%;
+    &__tarjeta {
+        display: flex;
+        flex-direction: column;
+        margin: 1vw 0;
+        padding: 1vw 1vw;
+        align-items: center;
+        justify-content: center;
+        border: solid rgb(119, 119, 119) 2px;
+        border-radius: 2vw;
+        box-shadow: 3px 3px 10px;
+    }
+
+    p {
+        padding: 2vw;
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+
+    &__img {
+        height: 100%;
+    }
 }
 
 @media (max-width:1200px) {
 
     .articulos {
-        display: grid;
         grid-template-rows: 1fr 1fr 1fr;
-        justify-content: center;
-        text-align: justify;
-        padding: 1vh 2vh;
         gap: 1vh;
+
+        &__img {
+            width: 80%;
+            object-fit: cover;
+        }
     }
 
-    .articulos__img {
-        width: 80%;
-        object-fit: cover;
+    .imgbienv__carrusel {
+        width: 90%;
     }
-
 }
+
 
 @media (min-width:1200px) {
 
     .articulos {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        text-align: justify;
-        padding: 1vh 2vh;
-        gap: 1vh;
-    }
+        gap: 1.5vh;
 
-    .articulos__img {
-        width: 100%;
+        &__img {
+            width: 100%;
+        }
     }
 }

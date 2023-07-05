@@ -1,5 +1,6 @@
 .estudios {
     width: 100%;
+
     .estudios__listados {
         display: none;
     }
@@ -9,160 +10,161 @@
     }
 
     .estudios__convinacion {
-        display: flex;
+        @include flexbox (center, none);
         text-align: justify;
-        justify-content: center;
         padding: 1.5vh;
         font-size: larger;
     }
 }
 
-.lista-estudios {
-    padding: 2vh;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    width: 100%;
-
-    .estudios__boton {
-        display: none;
-    }
-
-    .lista__inf {
-        list-style: none;
-        padding-left: 2rem;
-    }
-
-    .lista {
-        border: solid grey;
-        padding-left: 2rem;
-        border-radius: 0.5rem;
-        transition: 0.5s;
-
-    }
-
-    .lista:hover {
-        box-shadow: 3px 3px 10px;
-
-    }
-
-    .check-estudios,
-    .ventana1 {
-        display: none;
-    }
-}
-
-@media (min-width: 1024px) {
-
-    .estudios {
-        .estudios__listados {
-            display: flex;
-            text-align: justify;
-            justify-content: center;
-            padding: 1rem;
-        }
-
-        .estudios__seleccion {
-            display: flex;
-            text-align: justify;
-            justify-content: center;
-            padding: 0.5rem;
-        }
-    }
-
     .contenedor__estudios {
-    display: flex;
-    justify-content: center;
 
-    .lista__estudios {
-        padding: 1vw;
-        display: grid;
-        max-width: 1300px;
-        padding-bottom: 40vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 1rem;
-        grid-template-areas:
-            "cerebro cuello"
-            "torax abdomen";
+        .lista-estudios {
+            padding: 2vh;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            width: 100%;
+            padding-bottom: 40vh;
+            
+            .estudios__boton {
+                display: none;
+            }
 
-        .cerebro {
-            grid-area: cerebro;
+            .lista__inf {
+                padding-left: 2rem;
+            }
+
+            .lista {
+                border: solid grey;
+                padding-left: 2rem;
+                border-radius: 0.5rem;
+                transition: 0.5s;
+
+            }
+
+            .lista:hover {
+                box-shadow: 3px 3px 10px;
+
+            }
+
+            .check-estudios,
+            .ventana1 {
+                display: none;
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+
+        .estudios {
+            .estudios__listados {
+                @include flexbox (center, none);
+                text-align: justify;
+                padding: 1rem;
+            }
+
+            .estudios__seleccion {
+                @include flexbox (center, none);
+                text-align: justify;
+                padding: 0.5rem;
+            }
         }
 
-        .cuello {
-            grid-area: cuello;
+        .contenedor__estudios {
+            @include flexbox (center, none);
+            
+            .lista-estudios {
+                padding: 1vw;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 1rem;
+                grid-template-areas:
+                    "cerebro cuello"
+                    "torax abdomen";
+                max-width: 1300px;
+                padding-bottom: 40vh;
+
+                .cerebro {
+                    grid-area: cerebro;
+                }
+
+                .cuello {
+                    grid-area: cuello;
+                }
+
+                .torax {
+                    grid-area: torax;
+                }
+
+                .abdomen {
+                    grid-area: abdomen;
+                }
+            }
+
+            .ventana1 {
+                width: 50%;
+                height: auto;
+                max-width: 65rem;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                margin-left: 18rem;
+                text-align: center;
+                border-radius: 8px;
+                background-color: #7e7e7e;
+                max-width: 800px;
+
+            }
+
+            .check-estudios:checked~.ventana1 {
+                display: flex;
+            }
+
+            .check-cierre {
+                position: absolute;
+                align-self: flex-end;
+                font-size: 1.3rem;
+                width: 2rem;
+                height: 2rem;
+                border: solid grey;
+                border-radius: 8px;
+                background: rgb(58, 58, 58);
+                color: white;
+                opacity: 70%;
+
+            }
+
+            .check-cierre:hover {
+                background-color: red;
+            }
+
+            .imgtool {
+                height: 15rem;
+                width: 15rem;
+            }
+
+            //==============Psosicionamiento de ventanas============================
+            .vent_cerebro {
+                top: 300px;
+                left: 22%;
+            }
+
+            .vent_cuello {
+                top: 300px;
+                right: 48%;
+
+            }
+
+            .vent_torax {
+                top: 300px;
+                left: 22%;
+            }
+
+            .vent_abdomen {
+                top: 300px;
+                right: 48%;
+            }
         }
-
-        .torax {
-            grid-area: torax;
-        }
-
-        .abdomen {
-            grid-area: abdomen;
-        }
     }
-
-    .ventana1 {
-        width: 50%;
-        height: auto;
-        max-width: 65rem;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        margin-left: 18rem;
-        text-align: center;
-        border-radius: 8px;
-        background-color: #7e7e7e;
-
-    }
-
-    .check-estudios:checked~.ventana1 {
-        display: flex;
-    }
-
-    .check-cierre {
-        position: absolute;
-        align-self: flex-end;
-        font-size: 1.3rem;
-        width: 2rem;
-        height: 2rem;
-        border: solid grey;
-        border-radius: 8px;
-        background: rgb(58, 58, 58);
-        color: white;
-        opacity: 70%;
-
-    }
-
-    .check-cierre:hover {
-        background-color: red;
-    }
-
-    .imgtool {
-        height: 15rem;
-        width: 15rem;
-    }
-
-    //==============Psosicionamiento de ventanas============================
-    .vent_cerebro {
-        top: 2vh;
-        left: 22%;
-    }
-
-    .vent_cuello {
-        top: 2vh;
-        right: 48%;
-
-    }
-
-    .vent_torax {
-        top: 2vh;
-        left: 22%;
-    }
-
-    .vent_abdomen {
-        top: 2vh;
-        right: 48%;
-    }
-}}
