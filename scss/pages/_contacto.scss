@@ -1,3 +1,8 @@
+.contactenos {
+    @include flexbox (center, center);
+    font-size: 2rem;
+}
+
 .formulario {
     @include flexbox (none, center);
     flex-direction: column;
@@ -11,7 +16,7 @@
     grid-template-rows: repeat(4 1fr);
     justify-content: center;
     gap: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     max-width: 1300px;
 }
 
@@ -26,12 +31,21 @@
     width: 100%;
 }
 }
+.ingreso__submit {
+    padding: 1.5vh;
+    font-size: 1.5rem;
+}
+.ingreso__reset {
+    padding: 1.5vh;
+    font-size: 1.5rem;
+}
+
 }
 
 /* ========= TEXTO DE CONTACTO ============== */
 .textocontacto {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: justify;
     padding: 1vw 2vw;
 }

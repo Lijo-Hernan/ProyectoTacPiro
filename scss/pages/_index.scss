@@ -45,9 +45,8 @@
         padding: 1vw 1vw;
         align-items: center;
         justify-content: center;
-        border: solid rgb(119, 119, 119) 2px;
-        border-radius: 2vw;
-        box-shadow: 3px 3px 10px;
+        @include recuadro ();
+        @include sombra ();
     }
 
     p {

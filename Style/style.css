@@ -18,8 +18,24 @@ ul, ol {
   list-style: none;
 }
 
+@keyframes ventabre {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes ventcierra {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
 .header {
-  background: linear-gradient(to right, #fcd10c, #fcd10c, #aadac3 70%, #00b9f2 100%);
+  background: linear-gradient(to right, #fcd10c, #fcd10c 40%, #aadac3 70%, #00b9f2 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -265,7 +281,7 @@ ul, ol {
   padding-left: 2rem;
 }
 .contenedor__estudios .lista-estudios .lista {
-  border: solid grey;
+  border: solid rgb(119, 119, 119) 3px;
   padding-left: 2rem;
   border-radius: 0.5rem;
   transition: 0.5s;
@@ -335,6 +351,8 @@ ul, ol {
   }
   .contenedor__estudios .check-estudios:checked ~ .ventana1 {
     display: flex;
+    animation-name: ventabre;
+    animation-duration: 2s;
   }
   .contenedor__estudios .check-cierre {
     position: absolute;
@@ -385,8 +403,9 @@ ul, ol {
   align-items: none;
   font-size: 3rem;
   padding: 2rem 1rem;
-  border: solid rgb(150, 149, 149);
-  border-radius: 1rem;
+  border: solid rgb(119, 119, 119) 2px;
+  border-radius: 2vw;
+  box-shadow: 3px 3px 10px;
 }
 .seguridad__img {
   display: none;
@@ -406,6 +425,13 @@ ul, ol {
   text-align: justify;
 }
 
+.contactenos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
 .formulario {
   display: flex;
   justify-content: none;
@@ -421,7 +447,7 @@ ul, ol {
   grid-template-rows: repeat(4 1fr);
   justify-content: center;
   gap: 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   max-width: 1300px;
 }
 .formulario .contendedor-consulta {
@@ -436,11 +462,19 @@ ul, ol {
   height: 100%;
   width: 100%;
 }
+.formulario .ingreso__submit {
+  padding: 1.5vh;
+  font-size: 1.5rem;
+}
+.formulario .ingreso__reset {
+  padding: 1.5vh;
+  font-size: 1.5rem;
+}
 
 /* ========= TEXTO DE CONTACTO ============== */
 .textocontacto {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: justify;
   padding: 1vw 2vw;
 }
@@ -464,6 +498,23 @@ ul, ol {
     padding: 3vw 3vw 5vh 3vw;
   }
 }
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh;
+}
+.titulo__nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 3vh;
+  box-shadow: 3px 3px 10px;
+  border: solid rgb(119, 119, 119) 2px;
+  border-radius: 2vw;
+}
+
 .imgnosotros {
   display: flex;
   justify-content: space-around;
