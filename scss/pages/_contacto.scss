@@ -1,6 +1,15 @@
-.contactenos {
+.titulo {
     @include flexbox (center, center);
-    font-size: 2rem;
+    padding: 3vh;
+
+    &__contactenos {
+        @include flexbox (center, center);
+        font-size: 2rem;
+        padding: 8vh;
+        @include sombra ();
+        @include recuadro ();
+
+    }
 }
 
 .formulario {
@@ -51,7 +60,7 @@
 }
 .maps {
     @include flexbox (center, none);
-    padding: 3vw 3vw 30vh 3vw;
+    padding: 3vw 3vw 50vh 3vw;
 }
 
 @media (min-width: 720px) {
@@ -63,7 +72,7 @@
         gap: 1rem;
     }
     .maps {
-        padding: 3vw 3vw 5vh 3vw;
+        padding: 3vw 3vw 10vh 3vw;
     }
 }
 
