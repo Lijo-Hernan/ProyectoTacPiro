@@ -339,14 +339,13 @@ ul, ol {
   .contenedor__estudios .ventana1 {
     width: 50%;
     height: auto;
-    max-width: 65rem;
     flex-direction: column;
     align-items: center;
     position: absolute;
     margin-left: 18rem;
     text-align: center;
     border-radius: 8px;
-    background-color: #7e7e7e;
+    background-color: rgba(161, 161, 161, 0.9921568627);
     max-width: 800px;
   }
   .contenedor__estudios .check-estudios:checked ~ .ventana1 {
@@ -369,9 +368,17 @@ ul, ol {
   .contenedor__estudios .check-cierre:hover {
     background-color: red;
   }
-  .contenedor__estudios .imgtool {
-    height: 15rem;
-    width: 15rem;
+  .contenedor__estudios .tooltip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+  }
+  .contenedor__estudios .tooltip__img {
+    width: 25%;
+  }
+  .contenedor__estudios .ptool {
+    font-size: larger;
   }
   .contenedor__estudios .vent_cerebro {
     top: 300px;
@@ -436,7 +443,7 @@ ul, ol {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  padding: 3vh;
+  padding: 8vh;
   box-shadow: 3px 3px 10px;
   border: solid rgb(119, 119, 119) 2px;
   border-radius: 2vw;
@@ -529,7 +536,7 @@ ul, ol {
   display: flex;
   justify-content: space-around;
   align-items: none;
-  height: 18rem;
+  height: 50vh;
   padding: 1rem;
   display: none;
 }
