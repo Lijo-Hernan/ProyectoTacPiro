@@ -272,7 +272,7 @@ ul, ol {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1rem;
   width: 100%;
-  padding-bottom: 40vh;
+  padding-bottom: 20vh;
 }
 .contenedor__estudios .lista-estudios .estudios__boton {
   display: none;
@@ -281,10 +281,16 @@ ul, ol {
   padding-left: 2rem;
 }
 .contenedor__estudios .lista-estudios .lista {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   border: solid rgb(119, 119, 119) 3px;
   padding-left: 2rem;
   border-radius: 0.5rem;
   transition: 0.5s;
+}
+.contenedor__estudios .lista-estudios .lista__img {
+  width: 40%;
 }
 .contenedor__estudios .lista-estudios .lista:hover {
   box-shadow: 3px 3px 10px;
@@ -443,7 +449,7 @@ ul, ol {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  padding: 8vh;
+  padding: 3vh;
   box-shadow: 3px 3px 10px;
   border: solid rgb(119, 119, 119) 2px;
   border-radius: 2vw;
@@ -571,7 +577,7 @@ ul, ol {
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto auto;
   gap: 1rem;
-  padding-bottom: 20vh;
+  padding-bottom: 30vh;
 }
 .personal .personal__jefes {
   grid-column: span 2;

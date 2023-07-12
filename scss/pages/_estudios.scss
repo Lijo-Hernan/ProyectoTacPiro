@@ -25,7 +25,7 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 1rem;
         width: 100%;
-        padding-bottom: 40vh;
+        padding-bottom: 20vh;
 
         .estudios__boton {
             display: none;
@@ -36,17 +36,22 @@
         }
 
         .lista {
+            @include flexbox (space-around ,center);
             border: solid $colorbordes 3px;
             padding-left: 2rem;
             border-radius: 0.5rem;
             transition: 0.5s;
+            
+        &__img {
+            width: 40% ;
+        
         }
 
-        .lista:hover {
+        &:hover {
             box-shadow: 3px 3px 10px;
 
         }
-
+        }
         .check-estudios,
         .ventana1 {
             display: none;
