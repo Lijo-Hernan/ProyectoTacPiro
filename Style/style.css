@@ -14,7 +14,8 @@ hr {
   opacity: 1;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -200,6 +201,19 @@ ul, ol {
   padding: 1rem 2rem;
 }
 
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
+}
+h3 .h3__caja {
+  padding: 2vw;
+  box-shadow: 3px 3px 10px;
+  border: solid rgb(119, 119, 119) 2px;
+  border-radius: 2vw;
+}
+
 .articulos {
   display: grid;
   justify-content: center;
@@ -224,6 +238,7 @@ ul, ol {
 }
 .articulos__img {
   height: 100%;
+  object-fit: contain;
 }
 
 @media (max-width: 1200px) {
@@ -250,14 +265,23 @@ ul, ol {
 }
 .estudios {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vh;
 }
-.estudios .estudios__listados {
-  display: none;
+.estudios__caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1vw;
+  width: 70%;
+  box-shadow: 3px 3px 10px;
+  border: solid rgb(119, 119, 119) 2px;
+  border-radius: 2vw;
 }
-.estudios .estudios__seleccion {
-  display: none;
-}
-.estudios .estudios__convinacion {
+.estudios__caja__listados, .estudios__caja__convinacion {
   display: flex;
   justify-content: center;
   align-items: none;
@@ -265,9 +289,12 @@ ul, ol {
   padding: 1.5vh;
   font-size: larger;
 }
+.estudios__caja .estudios__seleccion {
+  display: none;
+}
 
 .contenedor__estudios .lista-estudios {
-  padding: 2vh;
+  padding: 6vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 1rem;
@@ -291,6 +318,7 @@ ul, ol {
 }
 .contenedor__estudios .lista-estudios .lista__img {
   width: 40%;
+  object-fit: contain;
 }
 .contenedor__estudios .lista-estudios .lista:hover {
   box-shadow: 3px 3px 10px;
@@ -319,16 +347,16 @@ ul, ol {
     display: flex;
     justify-content: center;
     align-items: none;
+    padding-bottom: 25vh;
   }
   .contenedor__estudios .lista-estudios {
-    padding: 1vw;
+    padding: 6vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
     grid-template-areas: "cerebro cuello" "torax abdomen";
     max-width: 1300px;
-    padding-bottom: 40vh;
   }
   .contenedor__estudios .lista-estudios .cerebro {
     grid-area: cerebro;
@@ -382,24 +410,25 @@ ul, ol {
   }
   .contenedor__estudios .tooltip__img {
     width: 40%;
+    object-fit: contain;
   }
   .contenedor__estudios .ptool {
     font-size: larger;
   }
   .contenedor__estudios .vent_cerebro {
-    top: 300px;
+    top: 400px;
     left: 22%;
   }
   .contenedor__estudios .vent_cuello {
-    top: 300px;
+    top: 400px;
     right: 48%;
   }
   .contenedor__estudios .vent_torax {
-    top: 300px;
+    top: 400px;
     left: 22%;
   }
   .contenedor__estudios .vent_abdomen {
-    top: 300px;
+    top: 400px;
     right: 48%;
   }
 }
@@ -413,20 +442,21 @@ ul, ol {
 .seguridad__titulo {
   display: flex;
   justify-content: center;
-  align-items: none;
-  font-size: 3rem;
-  padding: 2rem 1rem;
+  align-items: center;
+  font-size: 2.5rem;
+  padding: 2vw 1vw;
   border: solid rgb(119, 119, 119) 2px;
   border-radius: 2vw;
   box-shadow: 3px 3px 10px;
 }
 .seguridad__img {
   display: none;
+  object-fit: contain;
 }
-@media (min-width: 1200px) {
+@media (min-width: 720px) {
   .seguridad__img {
     display: flex;
-    height: 15rem;
+    width: 20vw;
   }
 }
 
@@ -539,11 +569,6 @@ ul, ol {
 }
 
 .imgnosotros {
-  display: flex;
-  justify-content: space-around;
-  align-items: none;
-  height: 50vh;
-  padding: 1rem;
   display: none;
 }
 .imgnosotros__bruno, .imgnosotros__santti, .imgnosotros__lijo {
@@ -555,14 +580,6 @@ ul, ol {
   font-size: 1.5rem;
 }
 
-@media (min-width: 720px) {
-  .imgnosotros {
-    display: flex;
-  }
-  .personal {
-    padding-bottom: 10vh;
-  }
-}
 .textonosotros {
   display: flex;
   text-align: justify;
@@ -572,7 +589,7 @@ ul, ol {
 
 /* =========== LISTA PERSONAL ============= */
 .personal {
-  padding: 2vw;
+  padding: 6vw;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto auto;
@@ -582,6 +599,20 @@ ul, ol {
 .personal .personal__jefes {
   grid-column: span 2;
   text-align: center;
+}
+
+@media (min-width: 720px) {
+  .imgnosotros {
+    display: flex;
+    justify-content: space-around;
+    align-items: none;
+    height: 30vw;
+    padding: 1rem;
+    object-fit: contain;
+  }
+  .personal {
+    padding-bottom: 20vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

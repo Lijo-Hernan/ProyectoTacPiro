@@ -1,26 +1,34 @@
 .estudios {
     width: 100%;
+    @include flexbox (center, center);
+    padding-top: 3vh ;
 
-    .estudios__listados {
-        display: none;
-    }
+    &__caja {
+        @include flexbox (center, center);
+        flex-direction: column;
+        padding: 1vw;
+        width: 70%;
+        @include sombra ();
+        @include recuadro ();
 
-    .estudios__seleccion {
-        display: none;
-    }
+        &__listados,
+        &__convinacion {
+            @include flexbox (center, none);
+            text-align: justify;
+            padding: 1.5vh;
+            font-size: larger;
+        }
 
-    .estudios__convinacion {
-        @include flexbox (center, none);
-        text-align: justify;
-        padding: 1.5vh;
-        font-size: larger;
+        .estudios__seleccion {
+            display: none;
+        }
     }
 }
 
 .contenedor__estudios {
 
     .lista-estudios {
-        padding: 2vh;
+        padding: 6vh;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 1rem;
@@ -36,22 +44,23 @@
         }
 
         .lista {
-            @include flexbox (space-around ,center);
+            @include flexbox (space-around, center);
             border: solid $colorbordes 3px;
             padding-left: 2rem;
             border-radius: 0.5rem;
             transition: 0.5s;
-            
-        &__img {
-            width: 40% ;
-        
+
+            &__img {
+                width: 40%;
+                @include img
+            }
+
+            &:hover {
+                box-shadow: 3px 3px 10px;
+
+            }
         }
 
-        &:hover {
-            box-shadow: 3px 3px 10px;
-
-        }
-        }
         .check-estudios,
         .ventana1 {
             display: none;
@@ -77,9 +86,10 @@
 
     .contenedor__estudios {
         @include flexbox (center, none);
+        padding-bottom: 25vh;
 
         .lista-estudios {
-            padding: 1vw;
+            padding: 6vw;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
@@ -88,7 +98,6 @@
                 "cerebro cuello"
                 "torax abdomen";
             max-width: 1300px;
-            padding-bottom: 40vh;
 
             .cerebro {
                 grid-area: cerebro;
@@ -151,31 +160,33 @@
 
             &__img {
                 width: 40%;
+                @include img
             }
         }
+
         .ptool {
             font-size: larger;
         }
 
         //==============Psosicionamiento de ventanas============================
         .vent_cerebro {
-            top: 300px;
+            top: 400px;
             left: 22%;
         }
 
         .vent_cuello {
-            top: 300px;
+            top: 400px;
             right: 48%;
 
         }
 
         .vent_torax {
-            top: 300px;
+            top: 400px;
             left: 22%;
         }
 
         .vent_abdomen {
-            top: 300px;
+            top: 400px;
             right: 48%;
         }
     }
