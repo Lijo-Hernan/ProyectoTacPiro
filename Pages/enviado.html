@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mensaje enviado exitosamente.">
+    <link rel="stylesheet" href="../Style/style.css">
+    <meta name="author" content="Hernán Lijó">
+    <link rel="shortcut icon" href="../Multimedia/Escudo.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Mensaje Enviado</title>
 </head>
-<body>
-    
-    <h2>GRACIAS POR SU MENSAJE</h2>
 
-    <script>
-    function redireccionar(){
-        window.location.href = "../index.html";
-    }
-    setTimeout("redireccionar()", 4000);
-    </script>
+<body>
+    <header>
+        <div class="header">
+            <img src="../Multimedia/Escudo Piro sin fondo.jpg" alt="Escudo Servicio de Imagenes" class="header__img">
+            <input id="navbar-menu" type="checkbox" />
+            <label class="menu__check" for="navbar-menu">
+                <span class="material-symbols-outlined menu-abrir">menu</span>
+                <span class="menu-cerrar">X</span>
+            </label>
+            <ul class="header__list">
+                <li><a href="../index.html" class="btn1">Inicio</a></li>
+                <li><a href="Estudios.html" class="btn1">Estudios realizados</a></li>
+                <li><a href="Preparacion.html" class="btn1">Preparación de estudios</a></li>
+                <li><a href="QuienesSomos.html" class="btn1">Quienes Somos</a></li>
+                <li><a href="Contacto.html" class="btn1">Contacto</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <div class="contenedor">
+            <h2 class="contenedor__titulo">GRACIAS POR SU MENSAJE</h2>
+            <h3 class="contenedor__mensaje">Recibimos su mensaje y le responderemos en breve</h3>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__datos">
+            <b class="footer__fono">Telefono: 4542-8620</b>
+            <b class="footer__dire">AV. Monroe 3555 (1430) CABA</b>
+            <div class="footer__mail">
+                <b>Email:</b><a href="tac.pirovano@gmail.com">Tac.pirovano@gmail.com</a>
+            </div>
+        </div>
+        <div class="footer__social">
+            <a href="https://www.instagram.com/residenciadxipirovano/" target="_blank"><img src="../Multimedia/IG.jpg"
+                    alt="Instagram" class="footer__IG"></a>
+            <a href="https://www.facebook.com/tomografia.pirovano?locale=es_LA" target="_blank"><img
+                    src="../Multimedia/fb.jpg" alt="Faceboock" class="footer__FB"></a>
+            <img src="../Multimedia/BAfondoamarillo.jpg" alt="Buenos Aires Ciudad" class="footer__ba">
+        </div>
+    </footer>
+    <!-- <script>
+        function redireccionar() {
+            window.location.href = "../index.html";
+        }
+        setTimeout("redireccionar()", 4000);
+    </script> -->
 </body>
+
 </html>

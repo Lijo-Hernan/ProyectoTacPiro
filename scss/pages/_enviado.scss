@@ -1,0 +1,5 @@
+.contenedor {
+@include flexbox (center, center);
+flex-direction: column;
+
+}
