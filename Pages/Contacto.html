@@ -40,27 +40,26 @@
             <h2 class="titulo__contactenos">¿Tiene dudas? Consultenos con confianza</h2>
         </div>
         <!-- formulario de contacto -->
-        <form method="post" class="formulario">
+        <form action="form.php" method="post" class="formulario">
             <div class="filiatorio">
                 <div class="filiatorio__dni">
                     <label for="documento">Documento <input type="number" id="documento" placeholder="xxxxxxxx"
-                            title="Documento sin puntos" required=""></label>
+                            title="Documento sin puntos" name="dni" required=""></label>
                 </div>
                 <div class="filiatorio__apellido">
-                    <label for="apellidos">Apellidos <input type="text" id="apellidos" placeholder="Apellidos"
+                    <label for="apellidos">Apellidos <input type="text" id="apellidos" placeholder="Apellidos" name="apellido"
                             required=""></label>
                 </div>
                 <div class="filiatorio__nombre">
-                    <label for="nombres">Nombres <input type="text" id="nombres" placeholder="nombres"
+                    <label for="nombres">Nombres <input type="text" id="nombres" placeholder="nombres" name="nombre"
                             required=""></label>
                 </div>
                 <div class="filiatorio__edad">
-                    <label for="Edad">Edad <input type="number" id="Edad" placeholder="edad" required="" min="0"
-                            max="110"></label>
+                    <label for="email">Email <input type="email" id="email" placeholder="nombre@mail.com" name="email" required=""></label>
                 </div>
             </div>
             <div class="contendedor-consulta">
-                <textarea class="consulta" type="textarea" id="consulta" placeholder="Ingrese aqui su consulta"
+                <textarea class="consulta" type="textarea" id="consulta" placeholder="Ingrese aqui su consulta" name="texto"
                     required=""></textarea>
             </div>
             <div class="ingreso">

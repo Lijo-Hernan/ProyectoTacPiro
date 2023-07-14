@@ -12,42 +12,46 @@
     }
 }
 
+
 .formulario {
     @include flexbox (none, center);
     flex-direction: column;
-    margin: 0 2rem;
-    padding: 1rem;
-    gap: 1rem;
+    margin: 2vw 2vw;
+    padding: 2vh;
+    gap: 1vh;
     overflow: hidden;
+    background-color: $colorPrincipal;
 
-.filiatorio {
-    display: grid;
-    grid-template-rows: repeat(4 1fr);
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1.5rem;
-    max-width: 1300px;
-}
+    .filiatorio {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.5rem;
+        max-width: 1300px;
+    }
 
-.contendedor-consulta {
-    @include flexbox (center, none);
-    height: 8rem;
-    width: 80%;
-    max-width: 1300px;
+    .contendedor-consulta {
+        @include flexbox (center, none);
+        height: 8rem;
+        width: 80%;
+        max-width: 1300px;
 
-.consulta {
-    height: 100%;
-    width: 100%;
-}
-}
-.ingreso__submit {
-    padding: 1.5vh;
-    font-size: 1.5rem;
-}
-.ingreso__reset {
-    padding: 1.5vh;
-    font-size: 1.5rem;
-}
+        .consulta {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .ingreso__submit {
+        padding: 1.5vh;
+        font-size: 1.5rem;
+    }
+
+    .ingreso__reset {
+        padding: 1.5vh;
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -58,22 +62,26 @@
     text-align: justify;
     padding: 1vw 2vw;
 }
+
 .maps {
     @include flexbox (center, none);
     padding: 3vw 3vw 50vh 3vw;
 }
 
 @media (min-width: 720px) {
-    .filiatorio {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4 1fr);
-        justify-content: center;
-        gap: 1rem;
+
+    .formulario {
+        .filiatorio {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            gap: 3vh;
+            margin: 3vh;
+        }
     }
+
     .maps {
         padding: 3vw 3vw 10vh 3vw;
     }
 }
-
-
