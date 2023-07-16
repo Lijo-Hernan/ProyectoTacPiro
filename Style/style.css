@@ -337,7 +337,7 @@ h3 .h3__caja {
   transition: 0.5s;
 }
 .contenedor__estudios .lista-estudios .lista__img {
-  width: 80%;
+  width: 60%;
   object-fit: contain;
 }
 .contenedor__estudios .lista-estudios .lista:hover {
