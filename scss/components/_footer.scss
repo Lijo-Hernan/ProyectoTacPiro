@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    font-size: calc((3vw + 1vh) / 2);
 
     &__social {
         display: flex;
@@ -20,17 +21,17 @@
     }
 
     &__ba {
-        height: 1.5rem;
-        width: 2.5rem;
+        height: 2.5vh;
+        width: 5vh;
     }
 
     &__IG {
-        height: 1.5rem;
+        height: 2.5vh;
         border-radius: 50%;
     }
 
     &__FB {
-        height: 1.5rem;
+        height: 2.5vh;
         border-radius: 50%;
     }
 }
@@ -40,6 +41,7 @@
             display: grid;
             width: 100%;
             grid-template-columns: 2fr 1fr;
+            font-size: 1.2vw;
 
         &__social,
         &__datos {

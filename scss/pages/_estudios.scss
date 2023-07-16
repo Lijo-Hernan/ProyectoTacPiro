@@ -1,28 +1,29 @@
 .estudios {
     width: 100%;
     @include flexbox (center, center);
-    padding-top: 3vh ;
+    padding-top: 3vh;
 
     &__caja {
         @include flexbox (center, center);
         flex-direction: column;
         padding: 1vw;
-        width: 70%;
+        width: 80%;
+        font-size: 2.5vw;
+        text-align: center;
         @include sombra ();
         @include recuadro ();
-
-        &__listados,
-        &__convinacion {
-            @include flexbox (center, none);
-            text-align: justify;
-            padding: 1.5vh;
-            font-size: larger;
-        }
-
-        .estudios__seleccion {
-            display: none;
-        }
     }
+
+    &__listados,
+    &__convinacion {
+        @include flexbox (center, none);
+        padding: 1vw;
+    }
+
+    &__seleccion {
+        display: none;
+    }
+
 }
 
 .contenedor__estudios {
@@ -33,25 +34,26 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 1rem;
         width: 100%;
-        padding-bottom: 20vh;
+        padding-bottom: 10vh;
+        font-size: 3.5vw;
 
         .estudios__boton {
             display: none;
         }
 
         .lista__inf {
-            padding-left: 2rem;
+            padding-left: 1vw;
         }
 
         .lista {
             @include flexbox (space-around, center);
             border: solid $colorbordes 3px;
-            padding-left: 2rem;
-            border-radius: 0.5rem;
+            padding-left: 2vw;
+            border-radius: 1vw;
             transition: 0.5s;
 
             &__img {
-                width: 40%;
+                width: 80%;
                 @include img
             }
 
@@ -68,25 +70,31 @@
     }
 }
 
+// ===================================BREAKPOINT=================================================
 @media (min-width: 1024px) {
 
     .estudios {
+
+        &__caja {
+            font-size: 1.5vw;
+        }
+
         .estudios__listados {
             @include flexbox (center, none);
             text-align: justify;
-            padding: 1rem;
+            padding: 1vw;
         }
 
         .estudios__seleccion {
             @include flexbox (center, none);
             text-align: justify;
-            padding: 0.5rem;
+            padding: 0.5vw;
         }
     }
 
     .contenedor__estudios {
         @include flexbox (center, none);
-        padding-bottom: 25vh;
+        // padding-bottom: 10vh;
 
         .lista-estudios {
             padding: 6vw;
@@ -94,10 +102,11 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             gap: 1rem;
+            font-size: 1.5vw;
             grid-template-areas:
                 "cerebro cuello"
                 "torax abdomen";
-            max-width: 1300px;
+
 
             .cerebro {
                 grid-area: cerebro;
@@ -114,10 +123,16 @@
             .abdomen {
                 grid-area: abdomen;
             }
+
+            .lista {
+                &__img {
+                    width: 40%;
+                }
+            }
         }
 
         .ventana1 {
-            width: 50%;
+            width: 50vw;
             height: auto;
             flex-direction: column;
             align-items: center;
@@ -126,7 +141,6 @@
             text-align: center;
             border-radius: 8px;
             background-color: #a1a1a1fd;
-            max-width: 800px;
 
         }
 
@@ -139,11 +153,9 @@
         .check-cierre {
             position: absolute;
             align-self: flex-end;
-            font-size: 1.3rem;
-            width: 2rem;
-            height: 2rem;
+            font-size: 1.8vw;
+            width: 5%;
             border: solid grey;
-            border-radius: 8px;
             background: rgb(58, 58, 58);
             color: white;
             opacity: 70%;
@@ -165,28 +177,28 @@
         }
 
         .ptool {
-            font-size: larger;
+            font-size: 1.5vw;
         }
 
         //==============Psosicionamiento de ventanas============================
         .vent_cerebro {
-            top: 400px;
-            left: 22%;
+            top: 50%;
+            left: 25%;
         }
 
         .vent_cuello {
-            top: 400px;
+            top: 50%;
             right: 48%;
 
         }
 
         .vent_torax {
-            top: 400px;
-            left: 22%;
+            top: 85%;
+            left: 25%;
         }
 
         .vent_abdomen {
-            top: 400px;
+            top: 85%;
             right: 48%;
         }
     }

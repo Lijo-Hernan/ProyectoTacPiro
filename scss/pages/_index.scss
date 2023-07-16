@@ -3,14 +3,14 @@
         @include flexbox (center, none);
         text-align: center;
         font-family: "montserrat", Arial;
-        font-size: 2rem;
+        font-size: 2vw;
     }
 
     &__bienvenidos {
         display: flex;
         justify-content: center;
-        font-size: 2rem;
         font-style: italic;
+        font-size: 2vw;
 
     }
 
@@ -25,7 +25,7 @@
     }
 
     &__texto {
-        font-size: x-large;
+        font-size: 1.5vw;
         text-align: justify;
         padding: 1rem 2rem;
     }
@@ -36,6 +36,7 @@ h3 {
     margin: 1vw;
 
     .h3__caja {
+        font-size: 2vw;
         padding: 2vw;
         @include sombra ();
         @include recuadro ();
@@ -63,7 +64,7 @@ h3 {
     p {
         padding: 2vw;
         text-align: justify;
-        font-size: 1.5rem;
+        font-size: 1.5vw;
     }
 
     &__img {
@@ -74,13 +75,33 @@ h3 {
 
 @media (max-width:1200px) {
 
+    .bienvenida {
+        &__titulo, &__bienvenidos {
+        font-size: 4vw;
+        }
+        &__texto {
+            font-size: 2.5vw;
+        }
+    }
+    
+    h3 {
+
+    .h3__caja {
+        font-size: 3vw;
+    }
+    }
     .articulos {
         grid-template-rows: 1fr 1fr 1fr;
         gap: 1vh;
 
+        p {
+            font-size: 3vw;
+        }
+
+
         &__img {
             width: 80%;
-            object-fit: cover;
+            @include img
         }
     }
 

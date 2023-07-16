@@ -4,8 +4,8 @@
 
     &__contactenos {
         @include flexbox (center, center);
-        font-size: 2rem;
-        padding: 3vh;
+        font-size: 4vw;
+        padding: 1vh 3vw;
         @include sombra ();
         @include recuadro ();
 
@@ -27,30 +27,33 @@
         grid-template-rows: repeat(4, 1fr);
         justify-content: center;
         gap: 1rem;
-        font-size: 1.5rem;
-        max-width: 1300px;
+        font-size: 3.5vw;
     }
 
     .contendedor-consulta {
         @include flexbox (center, none);
-        height: 8rem;
+        height: 10vw;
         width: 80%;
-        max-width: 1300px;
 
         .consulta {
             height: 100%;
             width: 100%;
+            font-size: 3.5vw;
         }
     }
+        .input {
+        font-size: 3.5vw;
+        }
+
 
     .ingreso__submit {
         padding: 1.5vh;
-        font-size: 1.5rem;
+        font-size: 3.5vw;
     }
 
     .ingreso__reset {
         padding: 1.5vh;
-        font-size: 1.5rem;
+        font-size: 3.5vw;
     }
 
 }
@@ -58,17 +61,23 @@
 /* ========= TEXTO DE CONTACTO ============== */
 .textocontacto {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 3.5vw;
     text-align: justify;
-    padding: 1vw 2vw;
+    padding: 1vw 3vw;
 }
 
 .maps {
     @include flexbox (center, none);
-    padding: 3vw 3vw 50vh 3vw;
+    padding: 4vw 2vw;
 }
 
 @media (min-width: 720px) {
+
+    .titulo {
+        &__contactenos {
+            font-size: 3vw;
+        }
+    }
 
     .formulario {
         .filiatorio {
@@ -78,10 +87,31 @@
             justify-content: center;
             gap: 3vh;
             margin: 3vh;
+            font-size: 2vw;
         }
+        .contendedor-consulta {    
+            .consulta {
+                font-size: 2vw;
+            }
+        }
+            .input {
+            font-size: 2vw;
+            }
+    
+    
+        .ingreso__submit {
+            font-size: 2vw;
+        }
+    
+        .ingreso__reset {
+            font-size: 2vw;
+        }
+    }
+    .textocontacto {
+        font-size: 2vw;
     }
 
     .maps {
-        padding: 3vw 3vw 10vh 3vw;
+        padding: 3vw;
     }
 }

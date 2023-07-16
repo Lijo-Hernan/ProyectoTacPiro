@@ -1,11 +1,11 @@
 .seguridad {
-    @include flexbox (space-around,center);
+    @include flexbox (space-around, center);
     width: 100%;
     padding: 4vh 1vw;
 
     &__titulo {
-        @include flexbox (center,center);
-        font-size: 2.5rem;
+        @include flexbox (center, center);
+        font-size: 7vw;
         padding: 2vw 1vw;
         @include recuadro ();
         @include sombra ();
@@ -16,19 +16,33 @@
         @include img
     }
 
-    @media (min-width:720px) {
-        &__img {
-        display: flex;
-        width: 20vw;
-        }
-    }
+
 }
 
-    .indicaciones {
-        padding: 3vh;
-        padding-bottom: 40vh;
+.indicaciones {
+    padding: 3vh;
+    padding-bottom: 30vh;
+    font-size: 2vw;
+
 
     &__p {
         text-align: justify;
+    }
+}
+
+@media (min-width:720px) {
+    .seguridad {
+        &__img {
+            display: flex;
+            width: 20vw;
+        }
+
+        &__titulo {
+            font-size: 4vw;
+        }
+    }
+    .indicaciones {
+        font-size: 1.5vw;
+        padding: 3VH;
     }
 }

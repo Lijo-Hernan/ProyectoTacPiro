@@ -11,8 +11,8 @@
 
     &__img {
         justify-self: left;
-        height: 6rem;
-        width: 6rem;
+        height: 10vw;
+        width: 10vw;
         overflow: hidden;
         border-radius: 50%;
     }
@@ -20,7 +20,6 @@
     @media (max-width:1024px) {
 
         &__list {
-            list-style: none;
             display: flex;
             align-items: center;
             align-self: center;
@@ -29,7 +28,8 @@
             background-color: $colorPrincipal;
             position: absolute;
             width: 100%;
-            margin-top: 13rem;
+            margin-top: 48vw;
+            z-index: 100;
         }
 
         .material-symbols-outlined {
@@ -70,7 +70,7 @@
         .btn1 {
             color: #000;
             letter-spacing: 4px;
-            font-size: 20px;
+            font-size: 4vw;
             text-decoration: none;
             overflow: hidden;
             transition: 0.2s;
@@ -78,6 +78,14 @@
     }
 
     @media (min-width: 1024px) {
+
+        &__img {
+            height: 6vw;
+            width: 6vw;
+            // justify-self: left;
+            // overflow: hidden;
+            // border-radius: 50%;
+        }
 
         .navbar {
             display: flex;
@@ -97,7 +105,7 @@
             padding: 4px 14px;
             color: #000;
             letter-spacing: 4px;
-            font-size: 20px;
+            font-size: 1.5vw;
             text-decoration: none;
             overflow: hidden;
             transition: 0.2s;
