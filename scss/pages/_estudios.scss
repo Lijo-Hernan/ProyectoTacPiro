@@ -53,7 +53,7 @@
             transition: 0.5s;
 
             &__img {
-                width: 80%;
+                width: 60%;
                 @include img
             }
 
@@ -155,7 +155,6 @@
             align-self: flex-end;
             font-size: 1.8vw;
             width: 5%;
-            border: solid grey;
             background: rgb(58, 58, 58);
             color: white;
             opacity: 70%;

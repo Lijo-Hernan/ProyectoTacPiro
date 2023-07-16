@@ -337,7 +337,7 @@ h3 .h3__caja {
   transition: 0.5s;
 }
 .contenedor__estudios .lista-estudios .lista__img {
-  width: 80%;
+  width: 60%;
   object-fit: contain;
 }
 .contenedor__estudios .lista-estudios .lista:hover {
@@ -416,7 +416,6 @@ h3 .h3__caja {
     align-self: flex-end;
     font-size: 1.8vw;
     width: 5%;
-    border: solid grey;
     background: rgb(58, 58, 58);
     color: white;
     opacity: 70%;
