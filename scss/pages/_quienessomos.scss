@@ -8,7 +8,7 @@
         padding: 1vh 2vw;
         @include sombra ();
         @include recuadro ();
-        font-size: 4vw;
+        font-size: 5vw;
 
     }
 }
@@ -29,7 +29,7 @@
 .textonosotros {
     display: flex;
     text-align: justify;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     padding: 1.5rem;
 }
 
@@ -41,7 +41,7 @@
     grid-template-rows: auto auto auto;
     gap: 1rem;
     padding-bottom: 20vh;
-    font-size: 3vw;
+    font-size: 4vw;
 
     .personal__jefes {
         grid-column: span 2;

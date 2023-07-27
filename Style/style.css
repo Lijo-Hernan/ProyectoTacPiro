@@ -250,20 +250,20 @@ h3 .h3__caja {
 
 @media (max-width: 1200px) {
   .bienvenida__titulo, .bienvenida__bienvenidos {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .bienvenida__texto {
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
   h3 .h3__caja {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .articulos {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1vh;
   }
   .articulos p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   .articulos__img {
     width: 80%;
@@ -296,7 +296,7 @@ h3 .h3__caja {
   flex-direction: column;
   padding: 1vw;
   width: 80%;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
   text-align: center;
   box-shadow: 3px 3px 10px;
   border: solid rgb(119, 119, 119) 2px;
@@ -478,7 +478,7 @@ h3 .h3__caja {
 .indicaciones {
   padding: 3vh;
   padding-bottom: 30vh;
-  font-size: 2vw;
+  font-size: 4vw;
 }
 .indicaciones__p {
   text-align: justify;
@@ -507,7 +507,7 @@ h3 .h3__caja {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4vw;
+  font-size: 4.5vw;
   padding: 1vh 3vw;
   box-shadow: 3px 3px 10px;
   border: solid rgb(119, 119, 119) 2px;
@@ -559,7 +559,7 @@ h3 .h3__caja {
 /* ========= TEXTO DE CONTACTO ============== */
 .textocontacto {
   display: inline-block;
-  font-size: 3.5vw;
+  font-size: 4.5vw;
   text-align: justify;
   padding: 1vw 3vw;
 }
@@ -618,7 +618,7 @@ h3 .h3__caja {
   box-shadow: 3px 3px 10px;
   border: solid rgb(119, 119, 119) 2px;
   border-radius: 2vw;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .imgnosotros {
@@ -636,7 +636,7 @@ h3 .h3__caja {
 .textonosotros {
   display: flex;
   text-align: justify;
-  font-size: 3.5vw;
+  font-size: 4.5vw;
   padding: 1.5rem;
 }
 
@@ -648,7 +648,7 @@ h3 .h3__caja {
   grid-template-rows: auto auto auto;
   gap: 1rem;
   padding-bottom: 20vh;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 .personal .personal__jefes {
   grid-column: span 2;

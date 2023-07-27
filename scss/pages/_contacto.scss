@@ -4,7 +4,7 @@
 
     &__contactenos {
         @include flexbox (center, center);
-        font-size: 4vw;
+        font-size: 4.5vw;
         padding: 1vh 3vw;
         @include sombra ();
         @include recuadro ();
@@ -61,7 +61,7 @@
 /* ========= TEXTO DE CONTACTO ============== */
 .textocontacto {
     display: inline-block;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
     text-align: justify;
     padding: 1vw 3vw;
 }
